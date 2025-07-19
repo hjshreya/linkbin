@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Linkbin</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Link Saver</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Mini Linkbin</h1>
-    
-    <input type="text" id="title" placeholder="Title *">
-    <input type="url" id="url" placeholder="https://example.com *">
-    <input type="text" id="desc" placeholder="Description (optional)">
-    
-    <button onclick="addLink()">Add Link</button>
-
-    <h2>Saved Links</h2>
-    <ul id="linkList"></ul>
+    <h1>🔖 Link Bin</h1>
+    <div class="input-section">
+      <input type="text" id="title-input" placeholder="Title (e.g. GitHub)" />
+      <input type="text" id="desc-input" placeholder="Description (optional)" />
+      <input type="url" id="link-input" placeholder="Paste a link (https://...)" />
+      <button onclick="addLink()">Add</button>
+    </div>
+    <ul id="link-list"></ul>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
